@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Übung 3, Aufgabe 1</title>
+    </head>
+
+    <body>
+        <form>
+        <fieldset>
+            <legend>Angaben</legend>
+            <p>
+                E-Mail
+                <input name="e-mail" id="email" size="20" required>
+            </p>
+
+            <p>
+                Themen
+                <select name="themen" input="3" size="3" multiple>
+                    <option value="geocaching">Geocaching</option>
+                    <option value="bouldern" selected>Bouldern</option>
+                    <option value="sportstacking">Sport Stacking</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <label><input type="radio" name="zustand" value="abonnieren" checked>abonnieren</label>
+            <label><input type="radio" name="zustand" value="abbestellen">abbestellen</label>
+        </p>
+        <p>
+        <input type="submit" value="Daten absenden">
+        </p>
+        </form>
+    </body>
+</html>

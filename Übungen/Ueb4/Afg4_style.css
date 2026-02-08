@@ -1,0 +1,7 @@
+th{ color: red; }
+
+section h2{ color: orange; }
+
+tr:nth-child(2n){ background-color: lightblue; }
+
+section p:nth-child(3), :nth-child(5) { background-color: yellow; }

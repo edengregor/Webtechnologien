@@ -1,0 +1,11 @@
+#p1{
+    float: right;
+    width: 50%;
+    border: solid blue;
+}
+
+#p4{
+    float: left;
+    width: 70%;
+    border: solid orange;
+}

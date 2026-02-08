@@ -1,0 +1,46 @@
+h1, h2 { font-family: cursive; }
+
+main { display: flex; }
+
+#bild {
+    float: right;
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    border-right: 1px solid;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+nav a { display: block; }
+
+footer { text-align: center; }
+
+@media screen and (max-width:768px) and (min-width:481px) {
+    main{ flex-direction: column; }
+
+    nav {
+    border-right: none;
+    border-bottom: 1px solid;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width:480px) {
+    #bild { display:none; }
+
+    main{ flex-direction: column; }
+
+    nav {
+    border-right: none;
+    border-bottom: 1px solid;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+}

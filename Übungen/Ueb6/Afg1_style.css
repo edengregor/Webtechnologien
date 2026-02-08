@@ -1,0 +1,22 @@
+header, nav, main, aside, footer {
+  border: 1px solid white;
+  background-color: orange;
+  padding: 15px;
+  text-align: center;
+}
+
+#container{
+    display: flex;
+    min-height: 40vh;
+    align-items: stretch;
+}
+
+#sidecontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+}
+
+main { flex: 70%; }
+
+nav, aside{ flex: 1; }
