@@ -17,15 +17,58 @@ h4{
     color: #b5cfed 
 }
 
-nav, aside{
-    padding: 5px;
-    background-color: #ededed;
+body{
+    font-family: Arial, Helvetica;
 }
 
-nav [href]{
+nav,
+aside,
+footer {
+    background-color: ededed;
+    border-radius: 0.4em
+}
+
+nav{
+    padding: 0.4em;
+}
+
+nav a {
     text-decoration: none;
+    color:inherit;
+    background-color: rgb(236, 236, 236);
+    border-radius: 0.2em;
+    padding: 0.2em;
 }
 
-fieldset{ padding: 10px; }
+nav a:hover{
+    background-color: rgb(222, 222, 222);
+}
 
-label, fieldset{ font-weight: bold; }
+#neueEpisoden {
+    background-color: lightgray;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    border: 1px solid black;
+}
+
+#EpisodenListe thead{
+    background-color: #c5dcf7;
+}
+
+#EpisodenListe tbody tr:nth-of-type(odd){
+    background-color: ededed;
+}
+
+a[href^="mailto"]::before{ /*elemente bei denen der wert des attributes mit "mailto" beginnt*/
+    content: url("../img/mail.svg") " "; /*schaft etwas platz zwischen icon und linktext*/
+    vertical-align: middle; /*damit Icon auf höhe des textes ist*/
+}
+
+nav [href]{ text-decoration: none; }
+
+main{
+    font-family: sans-serif;
+    font-size: 0.8em;
+}

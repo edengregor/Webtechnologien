@@ -1,0 +1,35 @@
+label{ margin: 2em; }
+
+fieldset{ padding: 10px; }
+
+label, fieldset{ font-weight: bold; }
+
+input:invalid, textarea:invalid{
+    border: 3px solid red;
+}
+
+label:has(input[required])::after{
+    content: " *";
+    color: red;
+    display: inline;
+}
+
+input[type]{
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+}
+
+fieldset{
+    background-color:#f9fcff;
+    padding: 1em;
+    margin-top:1em;
+    border:none;
+    border-top:1px solid grey;
+}
+
+fieldset legend{
+    border-left: 2px solid grey;
+    border-right: 2px solid grey; 
+    border-radius: 5px;
+}
