@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Duckycasts | Index</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="Ducky.jpg"
+            alt="Zeichnung einer süßen Ente mit hellblauer Mütze und hellblauem Schaal, sowie Kopfhöhrern"
+            width="80"
+            height="100">
+        </figure>
+        <h1>Duckycasts</h1>
+    </header>
+    <nav>
+        <a href="index.html">Abonnierte Podcasts</a>
+         | 
+        <a href="podcast.html">Details zum Podcast</a>
+         |  
+        <a href="episode.html">Details zur Episode</a>
+         | 
+        <a href="newPodcast.html">Podcast Anlegen</a>
+    </nav>
+    <main>
+        <form method="POST" action="https://edu.inf.fh-dortmund.de/podcastService/testPodcastSearch.php">
+            <fieldset>
+                <legend>Podcast anlegen</legend>
+                <fieldset>
+                    <legend>Podcast Details</legend>
+                    <label for="Titel">Titel</label>
+                    <input type="text" name="pctitle" id="Titel" maxlength="100" required pattern="[A-Z].*"
+                        title="Muss mit Großbuchstaben beginnen" placeholder="...">
+                    <br>
+                    <label for="Beschreibung">Beschreibung</label>
+                    <textarea name="pcdescription" id="Beschreibung" maxlength="500" placeholder="..."></textarea>
+                    <br>
+                    <label for="Autoren">Autoren</label>
+                    <input type="text" name="pcauthors" id="Autoren" pattern="([^,]+[,])*[^,]+" placeholder="...">
+                    <br>
+                    <fieldset>
+                        <legend> Kategorie </legend>
+                        <input type="checkbox" name="pccategories" value="commentary"> Commentary
+                        <br>
+                        <input type="checkbox" name="pccategories" value="kochen"> Kochen
+                        <br>
+                        <input type="checkbox" name="pccategories" value="motorsport"> Motorsport
+                        <br>
+                        <input type="checkbox" name="pccategories" value="music"> Music
+                        <br>
+                        <input type="checkbox" name="pccategories" value="mode"> Mode
+                        <br>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Besitzer/in</legend>
+                    <label for="Besitzer">Besitzer
+                        <input type="text" name="pcownername" id="Besitzer" required placeholder="...">
+                    </label>
+                    <br>
+                    <label for="Besitzer_Email">Besitzer Mail
+                        <input type="email" name="pcowneremail" id="Besitzer_Email" required
+                            placeholder="max.mustermann@mail.com">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Zeitstempel</legend>
+                    <label for="Letztes_Update">Letztes Update (Datum)
+                        <input type="date" name="pclastupdatedate" id="Letztes_Update" required min="2000-01-01">
+                    </label>
+                    <br>
+                    <label for="Letztes_Update_Zeit">Letztes Update (Uhrzeit)
+                        <input type="time" name="pclastupdatetime" id="Letztes_Update_Zeit" required>
+                    </label>
+                </fieldset>
+                <input type="submit">
+            </fieldset>
+            </fieldset>
+        </form>
+        <h2>Abonnierte Podcasts</h2>
+        <ul>
+            <li><a href="podcast.html">Formula Theories (with Edön)</a> - 536 Episodes</li>
+            <li><a href="podcast.html">Explore Eurovision (with Elyan)</a> - 896 Episodes</li>
+            <li><a href="podcast.html">Vampires, Witches and how to dress like them (with Lynn)</a> - 9746 Episodes</li>
+            <li><a href="podcast.html">Let's be creative (with James)</a> - 885 Episodes</li>
+            <li><a href="podcast.html">I have some Gossip (with Bienchen)</a> - 946224 Episodes</li>
+        </ul>
+    </main>
+    <aside>
+        <h3>Neuste Episoden</h3>
+        <ul>
+            <li>08.02.26: Formula Theories - So Caddilac released their livery</li>
+            <li>08.02.26: I have some Gossip - There was a party - lets talk about it</li>
+            <li>07.02.26: Explore Eurovision - Guys, we have to talk about Vidbir</li>
+            <li>06.02.26: Let's be creative - How to bake a "glad you survived your exam season"-cake</li>
+            <li>04.02.26: Vampires, Witches and how to dress like them - THEY HAD AN AUCTION IN CANADA????</li>
+        </ul>
+    </aside>
+    <footer>
+        © by Edens Webtech Adventures
+    </footer>
+</body>
