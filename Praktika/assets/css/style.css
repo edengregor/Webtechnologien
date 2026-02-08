@@ -1,0 +1,31 @@
+h1{
+    font-family: 'Ducky';
+    font-size: 5em;
+    margin: 0.2em;
+    color: #b5cfed;
+}
+
+h2,h3{
+    font-family: 'Ducky';
+    margin: 0.2em;
+    color: #b5cfed
+}
+
+h4{
+   font-family: 'Ducky';
+    margin: 0.2em;
+    color: #b5cfed 
+}
+
+nav, aside{
+    padding: 5px;
+    background-color: #ededed;
+}
+
+nav [href]{
+    text-decoration: none;
+}
+
+fieldset{ padding: 10px; }
+
+label, fieldset{ font-weight: bold; }
