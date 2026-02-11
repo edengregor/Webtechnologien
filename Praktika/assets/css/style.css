@@ -21,10 +21,9 @@ body{
     font-family: Arial, Helvetica;
 }
 
-nav,
 aside,
 footer {
-    background-color: ededed;
+    background-color: #ededed;
     border-radius: 0.4em
 }
 
@@ -61,14 +60,14 @@ nav a:hover{
     background-color: ededed;
 }
 
-a[href^="mailto"]::before{ /*elemente bei denen der wert des attributes mit "mailto" beginnt*/
-    content: url("../img/mail.svg") " "; /*schaft etwas platz zwischen icon und linktext*/
-    vertical-align: middle; /*damit Icon auf höhe des textes ist*/
-}
-
 nav [href]{ text-decoration: none; }
 
 main{
     font-family: sans-serif;
     font-size: 0.8em;
+}
+
+header{
+    display: flex;
+    flex-direction: row; 
 }
